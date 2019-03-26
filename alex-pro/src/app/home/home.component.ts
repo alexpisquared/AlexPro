@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   title = 'AlexPro';
-  h1Style: boolean = false;
-  users: Object;
+  h1Style = false;
+  users: object;
 
   constructor() {}
 

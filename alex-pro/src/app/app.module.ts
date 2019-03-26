@@ -15,7 +15,16 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, MyClientsComponent, MyProjectsComponent, MyFamilyComponent, MyAppsComponent, NavComponent, HomeComponent, ContactComponent],
+  declarations: [
+    AppComponent,
+    MyClientsComponent,
+    MyProjectsComponent,
+    MyFamilyComponent,
+    MyAppsComponent,
+    NavComponent,
+    HomeComponent,
+    ContactComponent
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
