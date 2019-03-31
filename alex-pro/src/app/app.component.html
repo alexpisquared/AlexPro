@@ -1,32 +1,29 @@
 <app-nav></app-nav>
 
+<h1>Welcome to alex-pro!</h1>
 <router-outlet></router-outlet>
 
-<hr />
-<!-- 
-  <mat-toolbar class="sidenav0-footer"> &nbsp; &nbsp; &nbsp; © Copyright 2019 [Not sure yet] Inc. </mat-toolbar> 
--->
-
-<div style="float: left;">
-  &nbsp; &nbsp; &nbsp;
-  <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/alexpigida/">
-    <img width="100" alt="Alex on LinkedIn" src="\assets\AlexTiny_LinkedIn.png" />
+<mat-toolbar class="sidenav0-footer">
+  <a
+    mat-button
+    target="_blank"
+    rel="noopener"
+    href="https://www.linkedin.com/in/alexpigida/"
+    matTooltip="Some fun Angular project I have no idea what to do with."
+  >
+    <img height="42" alt="Alex on LinkedIn" src="\assets\images\AlexPi pro 315x315 Smooth Circle.png" />
   </a>
-</div>
+  <span style="font-size:.3cm; margin-left: 20px; margin-right: 200px;"> © Copyright 2019 AAVpro Inc. </span>
 
-<div style="float: right;">
-  <p>
-    Latest gigs:&nbsp; &nbsp; &nbsp;
-    <a target="_blank" rel="noopener" href="https://nymi.com/">Nymi</a>
-    &nbsp; &nbsp; &nbsp;
-    <a target="_blank" rel="noopener" href="https://sciex.com/">Sciex</a>
-    &nbsp; &nbsp; &nbsp;
-    <a target="_blank" rel="noopener" href="https://www.bmo.com/">BMO</a>
-    &nbsp; &nbsp; &nbsp;
-  </p>
-</div>
+  <span style="font-size:.3cm;"> Latest gigs:&nbsp; &nbsp; &nbsp;</span>
+
+  <a mat-button target="_blank" rel="noopener" href="https://nymi.com/">Nymi</a> &nbsp; &nbsp; &nbsp;
+  <a mat-button target="_blank" rel="noopener" href="https://sciex.com/">Sciex</a> &nbsp; &nbsp; &nbsp;
+  <a mat-button target="_blank" rel="noopener" href="https://www.bmo.com/">BMO</a> &nbsp; &nbsp; &nbsp;
+</mat-toolbar>
 <!-- 
-//todo:
-https://medium.com/@saleemmalikraja/theme-your-angular-application-with-angular-material-library-477993fb746f
+
+  //todo:
+  https://medium.com/@saleemmalikraja/theme-your-angular-application-with-angular-material-library-477993fb746f
 
 -->
