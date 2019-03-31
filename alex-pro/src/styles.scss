@@ -37,72 +37,6 @@ $alex-pro-theme: mat-light-theme($alex-pro-primary, $alex-pro-accent, $alex-pro-
 
 // define a real custom palette (using http://mcg.mbitson.com) - https://www.color-hex.com/color-palette/22644
 $aav-main-primary: (
-  50: #fef4ea,
-  100: #fde4cb,
-  200: #fbd3a9,
-  300: #f9c186,
-  400: #f8b36c,
-  500: #f7a652,
-  600: #f69e4b,
-  700: #f59541,
-  800: #f38b38,
-  900: #f17b28,
-  A100: #ffffff,
-  A200: #fffcfb,
-  A400: #ffddc8,
-  A700: #ffcdae,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #000000,
-    500: #000000,
-    600: #000000,
-    700: #000000,
-    800: #000000,
-    900: #000000,
-    A100: #000000,
-    A200: #000000,
-    A400: #000000,
-    A700: #000000
-  )
-);
-
-$aav-dark-primary: (
-  50: #e6ebf4,
-  100: #c1cee4,
-  200: #97add2,
-  300: #6d8cc0,
-  400: #4e74b3,
-  500: #2f5ba5,
-  600: #2a539d,
-  700: #234993,
-  800: #1d408a,
-  900: #122f79,
-  A100: #adc1ff,
-  A200: #7a9bff,
-  A400: #4774ff,
-  A700: #2e61ff,
-  contrast: (
-    50: #000000,
-    100: #000000,
-    200: #000000,
-    300: #000000,
-    400: #ffffff,
-    500: #ffffff,
-    600: #ffffff,
-    700: #ffffff,
-    800: #ffffff,
-    900: #ffffff,
-    A100: #000000,
-    A200: #000000,
-    A400: #ffffff,
-    A700: #ffffff
-  )
-);
-
-$aav-main-accent: (
   50: #e0efff,
   100: #b3d7ff,
   200: #80bcff,
@@ -134,7 +68,8 @@ $aav-main-accent: (
     A700: #000000
   )
 );
-$aav-dark-accent: (
+
+$aav-dark-primary: (
   50: #fef4ea,
   100: #fde4cb,
   200: #fbd3a9,
@@ -164,6 +99,71 @@ $aav-dark-accent: (
     A200: #000000,
     A400: #000000,
     A700: #000000
+  )
+);
+
+$aav-main-accent: (
+  50: #fef4ea,
+  100: #fde4cb,
+  200: #fbd3a9,
+  300: #f9c186,
+  400: #f8b36c,
+  500: #f7a652,
+  600: #f69e4b,
+  700: #f59541,
+  800: #f38b38,
+  900: #f17b28,
+  A100: #ffffff,
+  A200: #fffcfb,
+  A400: #ffddc8,
+  A700: #ffcdae,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+$aav-dark-accent: (
+  50: #e6ebf4,
+  100: #c1cee4,
+  200: #97add2,
+  300: #6d8cc0,
+  400: #4e74b3,
+  500: #2f5ba5,
+  600: #2a539d,
+  700: #234993,
+  800: #1d408a,
+  900: #122f79,
+  A100: #adc1ff,
+  A200: #7a9bff,
+  A400: #4774ff,
+  A700: #2e61ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff
   )
 );
 $main-theme: mat-light-theme(mat-palette($aav-main-primary), mat-palette($aav-main-accent), mat-palette($mat-red));
