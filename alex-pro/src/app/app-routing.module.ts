@@ -7,6 +7,7 @@ import { MyAppsComponent } from './my-apps/my-apps.component';
 import { MyFamilyComponent } from './my-family/my-family.component';
 import { MyClientsComponent } from './my-clients/my-clients.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'my-family', component: MyFamilyComponent },
   { path: 'my-clients', component: MyClientsComponent },
   { path: 'my-projects', component: MyProjectsComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent }
 ];
 
