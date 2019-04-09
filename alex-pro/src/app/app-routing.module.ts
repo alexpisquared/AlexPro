@@ -8,6 +8,7 @@ import { MyFamilyComponent } from './my-family/my-family.component';
 import { MyClientsComponent } from './my-clients/my-clients.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { AboutComponent } from './about/about.component';
+import { RadarComponent } from './radar/radar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'my-family', component: MyFamilyComponent },
   { path: 'my-clients', component: MyClientsComponent },
   { path: 'my-projects', component: MyProjectsComponent },
+  { path: 'radar', component: RadarComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent }
 ];

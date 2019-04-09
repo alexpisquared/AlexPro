@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { AboutComponent } from './about/about.component';
+import { RadarComponent } from './radar/radar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AboutComponent } from './about/about.component';
     NavComponent,
     HomeComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    RadarComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule, BrowserAnimationsModule, MaterialModule],
   providers: [],

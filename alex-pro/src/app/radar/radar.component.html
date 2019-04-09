@@ -1,0 +1,11 @@
+<h1>Cnt : {{ cnt }}</h1>
+<img class="absolute" src="{{ url }}" alt="{{ url }}" />
+<img class="absolute" src="https://weather.gc.ca/cacheable/images/radar/layers/roads/WKR_roads.gif" alt="" />
+
+<ul>
+  <li *ngFor="let image of images" [class.selected]="image === selectedimage" (click)="onSelect(image)">
+    <img src="{{ image }}" alt="{{ image }}" />
+  </li>
+</ul>
+
+<h2>{{ url }}</h2>

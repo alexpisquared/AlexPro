@@ -1,0 +1,19 @@
+.absolute {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  width: 580px;
+  height: 480px;
+}
+
+img {
+  width: 145px;
+  height: 120px;
+  margin: auto;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
