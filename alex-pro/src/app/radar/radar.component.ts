@@ -13,17 +13,7 @@ export class RadarComponent implements OnInit {
   str: string;
   msg: string;
   root = 'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_';
-  imagU: string;
-  image0 = 'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_2019_04_09_00_00.GIF';
-  images: string[] = [
-    'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_2019_04_09_00_00.GIF',
-    'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_2019_04_09_00_00.GIF',
-    'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_2019_04_09_00_00.GIF',
-    'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_2019_04_09_00_00.GIF',
-    'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_2019_04_09_00_00.GIF',
-    'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_2019_04_09_00_00.GIF',
-    'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_2019_04_09_00_00.GIF'
-  ];
+  images: string[] = [' ', ' ', ' ', ' ', ' ', ' ', ' '];
 
   constructor() {}
 
@@ -39,16 +29,12 @@ export class RadarComponent implements OnInit {
       }
     }
 
-    const source = timer(0, 140);
+    const source = timer(0, 200);
 
     source.subscribe(val => {
-      this.cnt = val % 7;
-      const d = new Date();
-      d.setHours(d.getHours() - this.cnt - 1);
-      const dt = formatDate(d, 'yyyy_MM_dd_HH_00', 'en-US', 'UTC').toString();
+      this.cnt = 6 - (val % 7);
       this.url = this.images[this.cnt];
     });
-
   }
 }
 // https://www.sitepoint.com/frame-by-frame-animation-css-javascript/
