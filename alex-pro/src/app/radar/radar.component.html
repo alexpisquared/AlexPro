@@ -1,11 +1,57 @@
-<h1>Cnt : {{ cnt }}</h1>
-<img class="absolute" src="{{ url }}" alt="{{ url }}" />
-<img class="absolute" src="https://weather.gc.ca/cacheable/images/radar/layers/roads/WKR_roads.gif" alt="" />
+<h1>{{ cnt }}</h1>
+<h1>{{ url.substr(75, 5) }}</h1>
 
-<ul>
-  <li *ngFor="let image of images" [class.selected]="image === selectedimage" (click)="onSelect(image)">
-    <img src="{{ image }}" alt="{{ image }}" />
-  </li>
-</ul>
+<img style="top: 10px; left: 25%;" src="{{ urls[0] }}" class="absoluteHCentered" />
 
-<h2>{{ url }}</h2>
+<div *ngFor="let url of urls" [class.selected]="url === selectedimage" (click)="onSelect(url)">
+  <img style="top: 10px; left: 25%;" src="{{ url }}" class="absoluteHCentered" [hidden]="!(this.visurl === url)" />
+</div>
+
+<img style="top: 10px; left: 75%;" class="absoluteHCentered" src="{{ url }}" alt="{{ url }}" />
+
+<!-- <img class="absoluteHCentered" src="https://weather.gc.ca/cacheable/images/radar/layers/roads/WKR_roads.gif" alt="" /> -->
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<table>
+  <tr>
+    <td *ngFor="let url of urls">
+      <img src="{{ url }}" alt="{{ url.substr(75, 5) }}" [hidden]="this.visurl === url" />
+    </td>
+  </tr>
+  <tr>
+    <td *ngFor="let url of urls">
+      <img src="{{ url }}" alt="{{ url.substr(75, 5) }}" [hidden]="!(this.visurl === url)" />
+    </td>
+  </tr>
+</table>
