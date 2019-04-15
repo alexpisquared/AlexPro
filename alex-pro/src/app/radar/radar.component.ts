@@ -13,26 +13,33 @@ export class RadarComponent implements OnInit {
   str: string;
   msg: string;
   root = 'https://weather.gc.ca/data/radar/temp_image/WKR/WKR_PRECIP_RAIN_';
-  urls: string[] = [
-    // '', '', '', '', '', '',   // 6
-    // '', '', '', '', '', '',   // 12
-    // '', '', '', '', '', '',   // 18
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
-  ]; // 24
+  urls: Array<string>;
   visurl: string;
+  periodMs = 80;
+  source = timer(0, this.periodMs);
 
-  constructor() {}
+  constructor() {
+    this.tglLength();
+  }
 
   ngOnInit() {
+    this.reInit();
+  }
+
+  reInit() {
+    this.refillUrls();
+
+    const max = this.urls.length + 4;
+
+    this.source.subscribe(val => {
+      this.cnt = max - (val % max) - 1;
+      this.visurl = this.url = this.urls[this.cnt];
+    });
+  }
+
+  private refillUrls() {
     const d0 = new Date();
     d0.setUTCMinutes(d0.getUTCMinutes() - (d0.getUTCMinutes() % 10));
-
     for (const i in this.urls) {
       if (this.urls.hasOwnProperty(i)) {
         d0.setUTCMinutes(d0.getUTCMinutes() - 10);
@@ -43,14 +50,17 @@ export class RadarComponent implements OnInit {
         this.urls[i] = `${this.root}${d1}.GIF`.toString();
       }
     }
-
-    const source = timer(0, 80);
-    const max = this.urls.length + 4;
-
-    source.subscribe(val => {
-      this.cnt = max - (val % max) - 1;
-      this.visurl = this.url = this.urls[this.cnt];
-    });
   }
+
+  tglLength() {
+    this.urls = (this.urls === undefined || this.urls.length) > 7 ? new Array<string>(7) : new Array<string>(23);
+    this.urls.fill('');
+    this.refillUrls();
+  }
+  tglSpeed() {
+    this.periodMs = this.periodMs > 80 ? 80 : 800;
+    // this.source.setInterval(this.periodMs);
+  }
+  goBack() {}
 }
 // https://www.sitepoint.com/frame-by-frame-animation-css-javascript/
