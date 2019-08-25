@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit, OnDestroy {
-  appTitle = 'Alex Pro';
+  appTitle = 'alex Pi';
   titleTla = 'API';
   userName = '[Entered user name]';
   isLoading: boolean; // used for showing Loading spinner during transition between pages

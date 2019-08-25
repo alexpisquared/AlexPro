@@ -35,3 +35,35 @@ img {
   border-radius: 50%;
   width: 200px;
 }
+
+// from C:\c\Lgc\Mail\AvailStatusEmailer\Resources\AvailabilityStatus_AvailableNow
+.stl {
+  // color: #007035;
+  margin: 12px 10%;
+  font-size: 12pt;
+  // font-family: Arial;
+}
+
+.mainRect {
+  background: #e0ffe8;
+  color: #0077ff;
+  border-width: 1px;
+  border-color: #00e61a;
+  border-style: solid;
+  margin: 22px;
+  font-size: 18pt;
+  // font-family: Arial;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  behavior: url(/css/border-radius.htc);
+  border-radius: 20px;
+  width: 629px;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#fbfffc',EndColorStr='#E0f8ea'); /*	background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfffc), to(#E0f8ea)); 	background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 80%, 70%)), to(#E0f8ea)); */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfffc), to(#e0f8ea));
+  background-image: -webkit-linear-gradient(top, #fbfffc, #e0f8ea);
+  background-image: -moz-linear-gradient(top, #fbfffc, #e0f8ea);
+  background-image: -ms-linear-gradient(top, #fbfffc, #e0f8ea);
+  background-image: -o-linear-gradient(top, #fbfffc, #e0f8ea);
+  background-image: linear-gradient(to bottom, #fbfffc, #e0f8ea); /* current standard, but unimplemented and subject to change */
+}
