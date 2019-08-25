@@ -1,17 +1,21 @@
 <mat-toolbar color="primary">
+  <button mat-button routerLink="/" matTooltip="Go to Home page">
+    <img height="55" alt="CHS Logo" src="{{ AlexPi_Logo_Themed }}" />
+    <span style="font-size:1.5cm; font-family: Orbitron;">&nbsp; {{ appTitle }} </span>
+  </button>
+
   <a
     target="_blank"
     rel="noopener"
     href="https://cht.z13.web.core.windows.net"
     matTooltip="Some fun Angular project I have no idea what to do with."
   >
-    <img height="70" alt="CHS Logo" src="{{ themedIcon }}" />
+    <img height="50" alt="CHS Logo" src="{{ AlexPi_Logo_Themed }}" />
   </a>
-  <span style="font-size:1.5cm; font-family: Orbitron;">&nbsp; {{ appTitle }} </span>
 
   <span class="horizontalSpacer"></span>
 
-  <button mat-button routerLink="/" matTooltip="Go to Home page">Home</button>
+  <!-- <button mat-button routerLink="/" matTooltip="Go to Home page">Home</button> -->
   <button mat-button routerLink="/my-clients">My Clients</button>
   <button mat-button routerLink="/my-apps">My Apps</button>
   <button mat-button routerLink="/my-family">My Family</button>

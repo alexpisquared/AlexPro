@@ -18,7 +18,8 @@ export class NavComponent implements OnInit, OnDestroy {
   private themeKey = 'themeKey';
   private mainTheme = 'main-theme';
   private darkTheme = 'dark-theme';
-  themedIcon = './assets/AlexTiny_LinkedIn.png';
+  AlexPi_Logo_Themed = './assets/images/AlexTiny_LinkedIn.png';
+  alexTinyLinkedIn = './assets/images/AlexTiny_LinkedIn.png';
   isSignedIn = false;
 
   get themeVal(): string {
@@ -63,11 +64,11 @@ export class NavComponent implements OnInit, OnDestroy {
     if (this.document.body.classList.contains(this.mainTheme)) {
       this.document.body.classList.remove(this.mainTheme);
       this.document.body.classList.add((this.themeVal = this.darkTheme));
-      this.themedIcon = './assets/images/ChsLogo_Dark.png';
+      this.AlexPi_Logo_Themed = './assets/images/AlexPi_Logo_Dark.png';
     } else {
       this.document.body.classList.remove(this.darkTheme);
       this.document.body.classList.add((this.themeVal = this.mainTheme));
-      this.themedIcon = './assets/images/ChsLogo_Lite.png';
+      this.AlexPi_Logo_Themed = './assets/images/AlexPi_Logo_Lite.png';
     }
     console.log(` ** theme toggled  to   ${this.themeVal}`);
   }
@@ -82,6 +83,6 @@ export class NavComponent implements OnInit, OnDestroy {
 
     this.document.body.classList.add(this.themeVal);
 
-    this.themedIcon = this.themeVal === this.mainTheme ? './assets/images/ChsLogo_Lite.png' : './assets/images/ChsLogo_Dark.png';
+    this.AlexPi_Logo_Themed = this.themeVal === this.mainTheme ? './assets/images/AlexPi_Logo_Lite.png' : './assets/images/AlexPi_Logo_Dark.png';
   }
 }
