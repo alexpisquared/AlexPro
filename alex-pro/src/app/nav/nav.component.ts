@@ -19,7 +19,6 @@ export class NavComponent implements OnInit, OnDestroy {
   private mainTheme = 'main-theme';
   private darkTheme = 'dark-theme';
   AlexPi_Logo_Themed = './assets/images/AlexTiny_LinkedIn.png';
-  alexTinyLinkedIn = './assets/images/AlexTiny_LinkedIn.png';
   isSignedIn = false;
 
   get themeVal(): string {

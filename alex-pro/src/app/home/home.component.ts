@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   h1Style = false;
   users: object;
   startDate = 'Early September';
+  alexTinyLinkedIn = './assets/images/AlexTiny_LinkedIn.png';
 
   constructor() {}
 
