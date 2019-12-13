@@ -10,9 +10,9 @@ export class AppComponent {
   title = 'alex-pro';
 
   constructor(
-    // @Inject(DOCUMENT) private document: Document, 
-    private router: Router) {
+    // @Inject(DOCUMENT) private document: Document,
+    private router: Router
+  ) {
     // this.isSignedIn = false;
   }
-
 }

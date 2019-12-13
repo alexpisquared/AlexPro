@@ -19,18 +19,7 @@ import { AboutComponent } from './about/about.component';
 import { RadarComponent } from './radar/radar.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MyClientsComponent,
-    MyProjectsComponent,
-    MyFamilyComponent,
-    MyAppsComponent,
-    NavComponent,
-    HomeComponent,
-    ContactComponent,
-    AboutComponent,
-    RadarComponent
-  ],
+  declarations: [AppComponent, MyClientsComponent, MyProjectsComponent, MyFamilyComponent, MyAppsComponent, NavComponent, HomeComponent, ContactComponent, AboutComponent, RadarComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule, BrowserAnimationsModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent]
